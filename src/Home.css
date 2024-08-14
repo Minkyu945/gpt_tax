@@ -1,0 +1,111 @@
+.centered-text-container {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 110px !important; /* 상단바 높이 80px + 30px */
+}
+
+.text-container {
+    width: 745px !important; /* 가로폭을 745px로 변경 */
+    margin: 0 auto !important; /* 가운데 정렬 */
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 85vh !important; /* 화면 전체 높이 */
+    padding-bottom: 20px !important; /* 입력 필드 여유 공간 */
+}
+
+.centered-text {
+    font-size: 30px !important;
+    font-family: 'Pretendard', sans-serif !important;
+    font-weight: 700 !important; /* 글자 두께 700 */
+    color: #000000 !important; /* 검정색 글자 */
+    text-align: center !important;
+}
+
+.sub-text {
+    font-size: 20px !important; /* 폰트 크기 20px로 변경 */
+    font-family: 'Pretendard', sans-serif !important;
+    font-weight: 700 !important; /* 글자 두께 700 */
+    color: #000000 !important; /* 검정색 글자 */
+    margin-top: 50px !important;
+    text-align: left !important; /* 왼쪽 정렬 */
+}
+
+.button-container {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important; /* 한 줄에 4개의 버튼 */
+    gap: 20px !important; /* 버튼 간의 간격을 20px로 설정 */
+    margin-top: 50px !important;
+    justify-content: center !important; /* 가운데 정렬 */
+}
+
+.custom-card-button {
+    width: 176px !important; /* 폭을 176px로 변경 */
+    height: 100px !important; /* 높이를 100px로 변경 */
+    background-color: #F8FAFC !important;
+    color: #000000 !important;
+    border-radius: 10px !important;
+    font-family: 'Pretendard', sans-serif !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+}
+
+.custom-card-button:hover {
+    background-color: #e0e0e0 !important;
+}
+
+.button-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important; /* 왼쪽 정렬 */
+    height: 100% !important;
+    justify-content: flex-start !important; /* 아이템들이 위쪽에 위치하도록 변경 */
+    padding: 10px 0 !important;
+}
+
+.inline-content {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.icon {
+    width: 16px !important; /* 이미지 크기 텍스트 크기와 맞춤 */
+    height: 16px !important;
+    margin-right: 5px !important; /* 이미지와 텍스트 사이의 간격 */
+}
+
+.main-text {
+    font-size: 16px !important;
+    font-weight: 600 !important; /* font-weight 600 */
+    color: #000000 !important;
+    text-align: left !important;
+}
+
+.button-sub-text {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    color: #a9a9a9 !important; /* 연한 회색 */
+    text-align: left !important;
+    word-wrap: break-word !important;
+    margin-top: 5px !important; /* 제목과 부제목 사이의 간격 추가 */
+}
+
+.chat-input-wrapper2 {
+    display: flex !important;
+    align-items: center !important;
+    padding: 10px !important;
+    background-color: #ffffff !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-top: auto !important; /* 입력 필드를 맨 아래로 이동 */
+}
+
+.chat-input-wrapper2 .chat-input {
+    flex-grow: 1 !important;
+    margin-right: 10px !important;
+}
+
+.chat-input-wrapper2 .MuiOutlinedInput-root {
+    border-radius: 20px !important;
+}

@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+.white-app-bar {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+  font-family: Pretendard, sans-serif !important;
+  z-index: 1300 !important; /* z-index를 높여 상단바를 앞으로 */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.white-toolbar {
+  display: flex !important;
+  align-items: center !important;
+  height: 80px !important;
+  padding: 0 30px !important;
+  box-sizing: border-box !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.custom-button {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  font-weight: bold !important;
+  border: 1px solid #d3d3d3 !important;
+  border-radius: 8px !important;
+  margin-left: 20px !important;
+  font-family: Pretendard, sans-serif !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.custom-button:hover {
+  background-color: #f0f0f0 !important;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar {
+  width: 250px !important;
+  flex-shrink: 0 !important;
+  z-index: 1200 !important; /* z-index를 낮춰 상단바보다 뒤로 */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar .MuiDrawer-paper {
+  width: 250px !important;
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  font-family: Pretendard, sans-serif !important;
+}
+
+.new-chat-button {
+  width: 226px !important;
+  height: 48px !important;
+  background-color: transparent !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+  font-family: Pretendard, sans-serif !important;
+  font-size: 14px !important;
+  border: 1px solid rgba(169, 169, 169, 0.3) !important;
+  border-radius: 8px !important;
+  margin-left: 10px !important;
+  margin-top: 30px !important;
+  justify-content: left !important;
+  text-align: left !important;
+  padding-left: 20px !important;
+}
+
+.new-chat-button:hover {
+  border: 1px solid #ffffff !important;
+}
+
+.footer-button {
+  width: 100% !important;
+  height: 46px !important;
+  color: #ffffff !important;
+  font-family: Pretendard, sans-serif !important;
+  justify-content: left !important;
+  text-align: left !important;
+  padding-left: 20px !important;
+}
+
+.footer-button:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
 }

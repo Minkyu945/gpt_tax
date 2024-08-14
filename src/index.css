@@ -1,13 +1,28 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Pretendard', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.home-logo {
+    height: 40px;
+    margin-right: 50px;
+}
+
+.home-menu-item {
+    margin-right: 50px;
+    color: #000000; /* 검정색 글자 */
+    font-weight: bold; /* 글자 진하게 */
+}
+
+.home-spacer {
+    flex-grow: 1;
+}
+
+.home-content {
+    padding: 20px;
+    margin-left: 250px; /* 사이드바 폭만큼 여백 추가 */
+    margin-top: 80px; /* 상단바 높이만큼 여백 추가 */
 }

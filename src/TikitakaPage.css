@@ -1,0 +1,331 @@
+/* 전체 컨테이너 스타일 */
+.tikitaka-page-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 20px !important;
+    background-color: #f8fafc !important;
+    min-height: 87vh !important;
+}
+
+/* 주요 제목 스타일 */
+.main-content-title {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    font-family: Pretendard, sans-serif !important;
+    color: #000000 !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+}
+
+/* 파일 업로드 컨테이너 스타일 */
+.file-upload-container {
+    display: flex !important;
+    flex-direction: column !important; /* 수정: 열 방향으로 정렬 */
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 20px !important;
+    width: 100% !important;
+    max-width: 745px !important;
+}
+
+.analyze-prompt-container {
+    margin-top: 30px !important; /* 파일 선택 버튼 아래에 여백 추가 */
+    text-align: center !important;
+}
+
+.analyze-prompt-container .upload-button2 {
+    margin: 30px !important; /* 버튼 사이에 여백 추가 */
+}
+
+.analyze-prompt-container .reupload-button {
+    margin: 30px !important; /* 버튼 사이에 여백 추가 */
+}
+
+.file-select-box {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: 1px solid #ccc !important;
+    background-color: #f8f8f8 !important;
+    padding: 10px !important;
+    border-radius: 8px !important;
+    width: 70% !important;
+    margin-right: 10px !important;
+    cursor: pointer !important;
+}
+
+.file-select-box input[type="file"] {
+    display: none !important;
+}
+
+.file-select-box span {
+    color: #666 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+.file-select-box.disabled {
+    background-color: #e0e0e0 !important;
+    border: 1px solid #bdbdbd !important;
+    cursor: not-allowed !important;
+}
+
+.upload-button2 {
+    background-color: #64b5f6 !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+.upload-button2:hover {
+    background-color: #42a5f5 !important;
+    transform: translateY(-2px) !important;
+}
+
+.reupload-button {
+    background-color: #7c7c7c !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+.reupload-button:hover {
+    background-color: #a5aaad !important;
+    transform: translateY(-2px) !important;
+}
+
+.upload-button-file img {
+    margin-right: 8px !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.clip-icon {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.file-name {
+    margin-right: 10px !important;
+    font-family: Pretendard, sans-serif !important;
+    font-size: 16px !important;
+    color: #333 !important;
+}
+
+/* 메시지 컨테이너 스타일 */
+.messages-container {
+    width: 100% !important;
+    max-width: 745px !important;
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+    overflow-y: auto !important;
+    background-color: #f8fafc !important;
+    border-radius: 10px !important;
+}
+
+/* 메시지 버블 스타일 */
+.message-bubble {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+    margin-bottom: 10px !important;
+}
+
+/* 사용자 메시지 스타일 */
+.user-message {
+    align-self: flex-start !important;
+    background-color: #e1f5fe !important;
+}
+
+/* AI 메시지 스타일 */
+.ai-message {
+    align-self: flex-end !important;
+    background-color: #d1c4e9 !important;
+}
+
+/* 이메일 제목 스타일 */
+.email-subject {
+    font-size: 18px !important;
+    font-weight: bold !important;
+    color: #000000 !important;
+    margin-bottom: 10px !important;
+}
+
+/* 이메일 본문 스타일 */
+.email-body {
+    font-size: 16px !important;
+    color: #333333 !important;
+    white-space: pre-wrap !important; /* 줄바꿈을 유지하도록 설정 */
+}
+
+/* 타이핑 효과 스타일 */
+.typing {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.typing-loading {
+    display: flex !important;
+    align-items: center !important;
+    height: 24px !important;
+}
+
+.dot {
+    font-size: 48px !important;
+    font-weight: bold !important;
+    animation: colorChange 0.9s infinite !important;
+}
+
+.dot:nth-child(1) {
+    color: #2196f3 !important;
+    animation-delay: 0s !important;
+}
+
+.dot:nth-child(2) {
+    color: #64b5f6 !important;
+    animation-delay: 0.3s !important;
+}
+
+.dot:nth-child(3) {
+    color: #bbdefb !important;
+    animation-delay: 0.6s !important;
+}
+
+@keyframes colorChange {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.typing-text {
+    font-size: 16px !important;
+    margin-left: 10px !important;
+    font-weight: 500;
+}
+
+/* 입력 창 스타일 */
+.chat-input-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 10px !important;
+    background-color: #f8fafc !important;
+    width: 100% !important;
+    max-width: 745px !important;
+    margin-top: auto !important;
+}
+
+.chat-input-wrapper .chat-input {
+    flex-grow: 1 !important;
+    margin-right: 10px !important;
+    border-radius: 20px !important;
+}
+
+.chat-input-wrapper .MuiOutlinedInput-root {
+    border-radius: 20px !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 버튼 컨테이너 스타일 */
+.button-container2 {
+    display: flex !important;
+    justify-content: space-between !important;
+    margin-top: 10px !important;
+}
+
+.left-buttons {
+    display: flex !important;
+    gap: 10px !important;
+}
+
+.right-buttons {
+    display: flex !important;
+    gap: 10px !important;
+}
+
+.edit-button-container {
+    display: flex !important;
+    gap: 10px !important;
+    justify-content: flex-end !important;
+    width: 100% !important;
+    max-width: 745px !important;
+    margin-top: 10px !important;
+}
+
+.send-email-container {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 20px !important;
+}
+
+.email-subject-container {
+    text-align: center !important;
+    padding: 15px !important;
+    border-bottom: 2px solid #e2e2e2 !important;
+    background-color: #ffffff !important;
+    border-radius: 8px 8px 0 0 !important;
+}
+
+.email-subject-text {
+    font-size: 22px !important;
+    font-weight: bold !important;
+    color: #333 !important;
+    font-family: Pretendard, sans-serif !important;
+}
+
+/* 이메일 본문 스타일 */
+.email-body-container {
+    background-color: #ffffff !important;
+    padding: 20px !important;
+    border-radius: 0 0 8px 8px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    font-family: Pretendard, sans-serif !important;
+}
+
+.email-body-text {
+    font-size: 16px !important;
+    color: #444 !important;
+    line-height: 1.6 !important;
+    white-space: pre-wrap !important; /* 줄바꿈을 유지하도록 설정 */
+}
+
+.subject-container{
+    width: 100%;
+    flex: none;
+}
+
+.dialog-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.dialog-content {
+    font-size: 1.2rem;
+    color: #555;
+    padding: 20px;
+}
+
+.dialog-actions {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}

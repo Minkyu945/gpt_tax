@@ -1,0 +1,175 @@
+/* ExcelDocsPage.css */
+
+.excel-docs-page-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 20px !important;
+    background-color: #f8fafc !important;
+    min-height: 87vh !important;
+}
+
+.main-content-title {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    font-family: Pretendard, sans-serif !important;
+    color: #000000 !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+}
+
+.file-upload-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 20px !important;
+    width: 100% !important;
+    max-width: 745px !important;
+}
+
+.file-select-box {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: 1px solid #ccc !important;
+    background-color: #f8f8f8 !important;
+    padding: 10px !important;
+    border-radius: 8px !important;
+    width: 70% !important;
+    margin-right: 10px !important;
+    cursor: pointer !important;
+}
+
+.file-select-box input[type="file"] {
+    display: none !important;
+}
+
+.file-select-box span {
+    color: #666 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+.file-select-box.disabled {
+    background-color: #e0e0e0 !important;
+    border: 1px solid #bdbdbd !important;
+    cursor: not-allowed !important;
+}
+
+.upload-button {
+    background-color: #64b5f6 !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    padding: 10px 20px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+.upload-button:hover {
+    background-color: #42a5f5 !important;
+    transform: translateY(-2px) !important;
+}
+
+.messages-container {
+    width: 100% !important;
+    max-width: 745px !important;
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+    overflow-y: auto !important;
+    background-color: #f8fafc !important;
+    border-radius: 10px !important;
+}
+
+.message-bubble {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+    margin-bottom: 10px !important;
+}
+
+.user-message {
+    align-self: flex-start !important;
+    background-color: #e1f5fe !important;
+    margin-top:5px;
+    max-width: 80%;
+}
+
+.ai-message {
+    align-self: flex-end !important;
+    background-color: #d1c4e9 !important;
+    margin-top:5px;
+    max-width: 80%;
+}
+
+.typing-loading {
+    display: flex !important;
+    align-items: center !important;
+    height: 24px !important;
+}
+
+.dot {
+    font-size: 48px !important;
+    font-weight: bold !important;
+    animation: colorChange 0.9s infinite !important;
+}
+
+.dot:nth-child(1) {
+    color: #2196f3 !important;
+    animation-delay: 0s !important;
+}
+
+.dot:nth-child(2) {
+    color: #64b5f6 !important;
+    animation-delay: 0.3s !important;
+}
+
+.dot:nth-child(3) {
+    color: #bbdefb !important;
+    animation-delay: 0.6s !important;
+}
+
+@keyframes colorChange {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.typing-text {
+    font-size: 16px !important;
+    margin-left: 10px !important;
+    font-weight: 500;
+}
+
+.chat-input-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 10px !important;
+    background-color: #f8fafc !important;
+    width: 100% !important;
+    max-width: 745px !important;
+    margin-top: auto !important;
+}
+
+.chat-input-wrapper .chat-input {
+    flex-grow: 1 !important;
+    margin-right: 10px !important;
+    border-radius: 20px !important;
+}
+
+.chat-input-wrapper .MuiOutlinedInput-root {
+    border-radius: 20px !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
